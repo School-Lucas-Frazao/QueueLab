@@ -183,11 +183,10 @@ public class Queue
 		return count+1;//compensates for code not reaching tail
 	}
 	
-	public dNode returnEvenNodes()
+	public dNode returnEvenNodes(Queue value)
 	{
 		
 		dNode even = new dNode(); //store all even nodes
-		
 		dNode temp = new dNode();
 		temp = head;
 		
@@ -195,7 +194,7 @@ public class Queue
 		{
 			if(temp.data % 2 == 0)
 			{
-				even.next = temp;
+				value.NodeEnqueue(temp.next);
 			}
 			temp = temp.next;
 		}
@@ -213,7 +212,7 @@ public class Queue
 		dNode temp = new dNode();
 		temp = head;
 		
-		/*
+		
 		if(temp == null)
 		{
 			x = " There is nothing in the list ";
@@ -232,9 +231,6 @@ public class Queue
 			}
 		}
 		return x;
-	}
-	*/
-		
-		x = x + head.data;
-		return x;
+	}	
+
 }

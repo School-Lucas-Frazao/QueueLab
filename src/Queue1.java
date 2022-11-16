@@ -45,14 +45,13 @@ public class Queue1
     	myQueue.enqueue(3);
     	myQueue.enqueue(4);
     	
-    	//System.out.println(myQueue);
+    	System.out.println(myQueue);
     	
     	
-    	evenQueue.NodeEnqueue(myQueue.returnEvenNodes());
-    	
-   
+    	evenQueue.returnEvenNodes(myQueue);
     	
     	System.out.println(evenQueue);
+   
     	
     	
     	
